@@ -1,9 +1,10 @@
 #!/bin/python3
 
-from random import randint
+Import time 
+# Rock , Papera and Scissors Game
 
-name = input("please enter your name (; \n ")
-print('welcome!', name,"lets play rock scissor and papper\n choose from the below list")
+name = input("Enter your name : \n ")
+print(f"Welcome!', {name},lets play rock scissor and paper\n choose from the below list")
 player =input('rock(r), paper(p), scissor(s)\n')
 print(player, 'vs', end=' ')
 choose = randint(1,3)
@@ -18,7 +19,8 @@ elif choose ==2:
     computer = 'p'
 else:
   computer ='s'
-print(computer) 
+print("Predicting The Result ")
+time.sleep(1)
 if player == computer:
   print('match is DRAW !!')
 elif player == 'r' and computer == 's':
@@ -33,4 +35,6 @@ elif player == 'p' and computer == 's':
   print('YOU LOOSE......')
 elif player == 'p' and computer =='r':
   print('PLAYER ', name, ' WIN')
+
+print("Thanks For playing game")
   
